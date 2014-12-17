@@ -2,9 +2,11 @@ snippet comm
 	(comment
 	  ${0}
 	  )
+
 snippet condp
 	(condp ${1:pred} ${2:expr}
 	  ${0})
+
 snippet def
 	(def ${0})
 snippet defm
@@ -15,8 +17,18 @@ snippet defmm
 snippet defma
 	(defmacro ${1:name} "${2:doc-string}" ${0:dispatch-fn})
 snippet defn
-	(defn ${1:name} "${2:doc-string}" [${3:arg-list}]
+	(defn ${1:name} 
+	"${2:doc-string}" 
+	[${3:arg-list}]
 	  ${0})
+
+
+snippet defcomponent
+	(defcomponent ${1:name} 
+	"${2}" 
+	[${3:cursor} owner opts]
+	  ${0})
+
 snippet defp
 	(defprotocol ${1:name}
 	  ${0})
